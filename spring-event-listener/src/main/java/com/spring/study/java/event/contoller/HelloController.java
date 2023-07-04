@@ -15,8 +15,15 @@ public class HelloController {
     private final TestService testService;
 
     @GetMapping("/{name}")
-    public String syncTest(@PathVariable String name) {
+    public String eventListenerTest(@PathVariable String name) {
         String result = testService.transactionPublisher(name);
+        log.info("controller");
+        return result;
+    }
+
+    @GetMapping("/async/{name}")
+    public String syncTest(@PathVariable String name) {
+        String result = testService.asyncTest(name);
         log.info("controller");
         return result;
     }

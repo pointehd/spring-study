@@ -5,6 +5,7 @@ import com.spring.study.java.event.entity.SubTable;
 import com.spring.study.java.event.repository.SubRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,9 +22,11 @@ public class EventListenerService {
     @TransactionalEventListener(EventData.class)
 //    @Async
     public void eventListener(EventData data) {
-        log.info("log : {}, thread : {}", data, Thread.currentThread().getId());
+        log.info("event log : {}, thread : {}", data, Thread.currentThread().getId());
         subRepository.save(SubTable.of(data.getName()));
-
+        if (1 == 1) {
+            throw new RuntimeException("");
+        }
         log.info("save user :{}", data.getName());
     }
 
