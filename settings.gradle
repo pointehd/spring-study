@@ -1,0 +1,3 @@
+rootProject.name = 'spring-study-width-java'
+
+include 'spring-event-listener'
