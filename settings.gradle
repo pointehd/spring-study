@@ -2,3 +2,4 @@ rootProject.name = 'spring-study-width-java'
 
 include 'spring-event-listener'
 include 'spring-web-filter-sse'
+include 'spring-web-flux'
