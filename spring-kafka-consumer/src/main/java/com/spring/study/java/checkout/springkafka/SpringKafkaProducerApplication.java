@@ -1,4 +1,4 @@
-package com.spring.study.java.checkout.springkafkaproducer;
+package com.spring.study.java.checkout.springkafka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

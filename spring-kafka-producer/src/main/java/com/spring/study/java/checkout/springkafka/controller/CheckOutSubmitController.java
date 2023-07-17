@@ -1,7 +1,7 @@
-package com.spring.study.java.checkout.springkafkaproducer.controller;
+package com.spring.study.java.checkout.springkafka.controller;
 
-import com.spring.study.java.checkout.springkafkaproducer.dto.CheckOutDto;
-import com.spring.study.java.checkout.springkafkaproducer.service.SaveService;
+import com.spring.study.java.checkout.springkafka.dto.CheckOutDto;
+import com.spring.study.java.checkout.springkafka.service.SaveService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;

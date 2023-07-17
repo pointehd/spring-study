@@ -1,18 +1,21 @@
-package com.spring.study.java.checkout.springkafkaproducer.domain;
+package com.spring.study.java.checkout.springkafka.domain;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.sql.Timestamp;
 
 @Data
-@Table(name = "CHECKOUT_TABLE")
 @Entity
-public class CheckOutEntity {
+public class ShipmentCheckOutEntity {
 
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
+    private Long shipmentId;
     private Long checkOutId;
     private Long memberId;
     private Long productId;
@@ -20,5 +23,4 @@ public class CheckOutEntity {
     private String address;
     @CreationTimestamp
     private Timestamp createAt;
-
 }

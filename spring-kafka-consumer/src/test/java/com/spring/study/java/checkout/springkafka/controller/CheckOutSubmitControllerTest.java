@@ -1,4 +1,4 @@
-package com.spring.study.java.checkout.springkafkaproducer.controller;
+package com.spring.study.java.checkout.springkafka.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

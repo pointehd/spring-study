@@ -1,4 +1,4 @@
-package com.spring.study.java.checkout.springkafkaproducer.dto;
+package com.spring.study.java.checkout.springkafka.dto;
 
 import lombok.Getter;
 import lombok.Setter;
