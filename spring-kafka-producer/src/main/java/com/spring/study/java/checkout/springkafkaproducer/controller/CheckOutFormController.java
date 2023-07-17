@@ -1,4 +1,4 @@
-package com.spring.study.java.checkout.springkafkaproducer;
+package com.spring.study.java.checkout.springkafkaproducer.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
